@@ -71,7 +71,7 @@ class FlutterAlphaViewPlugin: NSObject,FlutterPlatformView,NG_AlphaPlayerCallBac
             result(0)
             break
         case "releasePlayer": /// 停止播放
-            self.playerNativeView.stopAlphaPlayer()
+            self.playerNativeView.playerStopWithFinishPlayingCallback()
             result(0)
             break
         default:
